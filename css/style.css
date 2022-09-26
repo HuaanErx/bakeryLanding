@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Caveat', cursive;
+    line-height: 2;
+}
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.459), rgba(0, 0, 0, 0.418)) , url(../img/cake2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -35%);
+    width: 100%;
+    overflow: hidden;
+}
+
+.text-box h1 {
+    text-transform: uppercase;
+    color: rgb(104, 59, 0);
+    text-shadow: 0 0 3px rgb(122, 116, 116), 0 0 5px rgb(228, 34, 34);
+}
+.heading-main {
+    display: block;
+    font-size: 5rem;
+    letter-spacing: 1.1rem;
+    animation-name: moveInLeft;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+.heading-sub {
+    display: block;
+    font-size: 1.6rem;
+    letter-spacing: 1.2rem;
+    animation-name: moveInRight;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInRight {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(-50px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }   
+}
+
+.btn-container{
+    text-align: center;
+}
+
+.btn {
+    border-bottom: 0.2rem solid rgb(97, 55, 0);
+    color: white;
+    display: inline-block;
+    font-size: 3rem;
+    padding: 1rem;
+    margin-top: 5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    box-shadow: 0 1rem 2rem rgb(0, 0, 0, 0.15);
+    background-color: rgb(100, 55, 0);
+    transform: translateY(-5px);
+}
+
+.btn:active {
+    box-shadow: 0 0.5rem 1rem rgb(0, 0, 0, 0.15);
+    transform: translateY(5px);
+}
+
+.main {
+    background-color: rgb(156, 83, 0);
+    height: 100vh;
+    margin-top: -5rem;
+    text-align: center;
+    padding-top: 5rem;
+    clip-path: polygon(48% 8%, 100% 0, 100% 43%, 100% 85%, 77% 92%, 45% 100%, 0 100%, 0% 43%, 0 0);
+}
+
+.main h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: rgb(104, 59, 0);
+    text-shadow: 0 0 3px rgb(122, 116, 116), 0 0 5px rgb(228, 34, 34);
+}
+
+.gallery {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 75%;
+}
+
+.gallery_photo {
+    box-shadow: 0 0.5rem 6rem rgb(0, 0, 0, 0.15);
+    outline-offset: 1rem;
+    position: absolute;
+    width: 500px;
+    transition: all 0.3s;
+    z-index: 10;
+}
+
+.gallery_photo:hover {
+    outline: 1.8rem solid rgb(100, 55, 0);
+    transform: scale(1.1);
+    z-index: 30;
+}
+
+.gallery_photo-1 {
+    left: -1%;
+    top: 5%;
+    width: 450px;
+}
+
+.gallery_photo-2 {
+    top: 30%;
+    left: 68%;
+}
+
+.gallery_photo-3 {
+    left: 28%;
+    top: 12%;
+    width: 600px;
+}
+
+.footer {
+    color: rgba(255, 255, 255, 0.459);
+    font-size: 2rem;
+    height: 200px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.footer ul li a {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.footer ul li:hover, .footer ul li a:hover {
+    color: blue;
+    transform: scale(1.2);
+}
+
+.copyright {
+    color: blueviolet;
+}
